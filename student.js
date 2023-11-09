@@ -8,7 +8,7 @@ function isSerialNumberValid(serialNumber) {
 function isSerialNumberUnique(serialNumber) {
     return studentData.every(data => data.serialNumber !== serialNumber);
 }
-
+////valid function
 function isValidName(name) {
     return name.trim() !== '';
 }
