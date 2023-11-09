@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="rectangle">
+        <h1> Enter Student Marks Details</h1>
+        <div class="details">
+            <h4>Serial Number</h4>
+            <input type="text" class="plain-input" id="serialNumber" placeholder="serial number" >
+            <h4>Student Name</h4>
+            <input type="text" class="plain-input" id="studentname" placeholder="student name" disabled>
+            <h4>Contact Number</h4>
+            <input type="text" class="plain-input" id="contact" placeholder="contact number" disabled>
+            <h4>Math A-Marks</h4>
+            <input type="text" class="plain-input" id="Math-A" placeholder="Math A-Marks" disabled>
+            <h4>Math B-Marks</h4>
+            <input type="text" class="plain-input" id="Math-B" placeholder="Math B-Marks" disabled>
+            <h4>physics Marks</h4>
+            <input type="text" class="plain-input" id="physics" placeholder="physics Marks" disabled>
+            <h4>English Marks</h4>
+            <input type="text" class="plain-input" id="English" placeholder="English Marks" disabled>
+        </div>
+
+        <div class="buttons">
+            <button class="btn" onclick="submitDetails();">Submit</button>
+            <button class="btn" id="getDetails">Get Details</button>
+        </div>
+        <button class="btn" id="clearvalues" onclick="clearvalues();">clearvalues</button>
+        
+    </div>
+    <div class="rectangle1">
+        <h1>Student Result</h1>
+        <button class="btn1"  id="dlt" onclick="deleteSelectedRow();">Multi Delete</button>
+        <div class="tab tab-1" style="width: auto;">
+            <table id="table" border="1" style="width: 100%;">
+                <tr>
+                    <th>Select</th>
+                    <th>S.no</th>
+                    <th>Student Name</th>
+                    <th>Contact No</th>
+                    <th>Math-A</th>
+                    <th>Math-B</th>
+                    <th>Physics</th>
+                    <th>English</th>
+                    <th>Edit</th>
+                    
+                    
+                </tr>
+                
+            </table>
+        </div>
+        
+    </div>
+<script src="student.js"></script>
+    
+</body>
+</html>
