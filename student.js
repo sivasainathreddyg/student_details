@@ -16,7 +16,7 @@ function isValidName(name) {
 function isValidContactNumber(contact) {
     return /^[0-9]{10}$/.test(contact);
 }
-  
+//check matha marks are done with validation are not
 function isValidMarksMathA(mathA) {
     // Check if it's a valid number between 0 and 100
     const isNumber = !isNaN(parseFloat(mathA)) && isFinite(mathA);
