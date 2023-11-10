@@ -361,7 +361,7 @@ function deleteSelectedRow(){
         const enteredSerialNumber = document.getElementById("serialNumber").value;
         populateStudentDetails(enteredSerialNumber);
     });
-
+//clear values using this function
 function clearvalues(){
     document.getElementById("serialNumber").value = "";
     document.getElementById("studentname").value = "";
